@@ -48,7 +48,7 @@ public class App
         veterinarian.experience = 3;
 
         Birds birds = new Birds();
-        birds.nume = "parrot";
+        birds.name = "parrot";
         birds.race = "cockatoo";
 
         Cats cats = new Cats();

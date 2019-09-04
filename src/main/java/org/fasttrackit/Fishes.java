@@ -1,6 +1,5 @@
 package org.fasttrackit;
 
-public class Fishes {
-    String name;
+public class Fishes extends Animal {
     String species;
 }
