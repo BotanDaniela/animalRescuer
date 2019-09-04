@@ -9,5 +9,11 @@ public class AnimalFood {
     java.util.Date expirationData;
     double availabilityInStock;
 
+    public AnimalFood(String name) {
+        this.name = name;
+    }
 
+    public AnimalFood() {
+
+    }
 }

@@ -6,4 +6,12 @@ public class AnimalClassis {
     String theNameOfYourFavoriteFood;
     String sexOfAnimal;
     String subcategoriesAnimalClassis;
+
+    public AnimalClassis(String nameAnimalClassis) {
+        this.nameAnimalClassis = nameAnimalClassis;
+    }
+
+    public AnimalClassis() {
+
+    }
 }

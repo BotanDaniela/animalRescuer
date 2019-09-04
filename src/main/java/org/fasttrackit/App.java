@@ -1,11 +1,5 @@
 package org.fasttrackit;
 
-import java.util.zip.DataFormatException;
-
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )

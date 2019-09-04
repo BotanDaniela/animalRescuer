@@ -5,4 +5,12 @@ public class Veterinarian {
     String specialization;
     String sexOfVeterinarian;
     String homeVeterinarian;
+
+    public Veterinarian(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public Veterinarian() {
+
+    }
 }

@@ -6,4 +6,11 @@ public class RecreationalActivity {
     String placeOfTheActivity;
     String usedObjects;
 
+    public RecreationalActivity(String name) {
+        this.name = name;
+    }
+
+    public RecreationalActivity() {
+
+    }
 }

@@ -8,6 +8,12 @@ public class Animal extends AnimalClassis {
     String NameOfYourFavoriteRecreationActivity;
     String colorOfAnimal;
 
+    public Animal(String nameAnimalClassis, String nameAnimal) {
+        super(nameAnimalClassis);
+        this.nameAnimal = nameAnimal;
+    }
 
-
+    public Animal() {
+        super();
+    }
 }
