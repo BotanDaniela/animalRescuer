@@ -7,7 +7,4 @@ public class Adopter extends People {
     String personality;
 
 
-
-
-
 }

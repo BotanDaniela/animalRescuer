@@ -5,4 +5,7 @@ public class RecreationalActivity {
     double time;
     String place;
 
+    public RecreationalActivity(String name) {
+        this.name = name;
+    }
 }

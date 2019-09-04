@@ -10,10 +10,15 @@ public class AnimalFood {
     java.time.LocalDate expirationData;
     boolean availabilityInStock;
 
+    public AnimalFood(String name) {
+        this.name = name;
+    }
+
     public static class MyClass {
         public static void main(String[] args) {
             LocalDate myObj = LocalDate.now();
             System.out.println(myObj);
+
         }
     }
 }

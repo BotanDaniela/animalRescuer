@@ -12,5 +12,7 @@ public class Animal {
     String height;
     double weight;
 
-
+    public Animal(String name) {
+        this.name = name;
+    }
 }
