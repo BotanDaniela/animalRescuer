@@ -1,19 +1,23 @@
 package org.fasttrackit;
 
-import javax.xml.crypto.Data;
+
+import java.time.LocalDate;
 
 public class AnimalFood {
     String name;
     double price;
     double amount;
-    java.util.Date expirationData;
-    double availabilityInStock;
+    java.time.LocalDate expirationData;
+    boolean availabilityInStock;
 
-    public AnimalFood(String name) {
-        this.name = name;
-    }
-
-    public AnimalFood() {
-
+    public static class MyClass {
+        public static void main(String[] args) {
+            LocalDate myObj = LocalDate.now();
+            System.out.println(myObj);
+        }
     }
 }
+
+
+
+
