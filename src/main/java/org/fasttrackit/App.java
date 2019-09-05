@@ -5,13 +5,12 @@ import java.time.LocalDateTime;
 
 public class App {
 
-
     public static void main(String[] args) {
 
-        Animal animal = new Animal("caine");
+        Animal animal = new Animal("Lesy");
         animal.levelOfHealth = 7;
         animal.age = 2;
-        animal.name = "caine";
+        animal.name = "Lesy";
         animal.color = "brown";
         animal.favoriteFood = "meat";
         animal.height = "medium";
@@ -73,6 +72,10 @@ public class App {
         people.gender = "male";
         people.age = 26;
         people.name = "Mircea";
+
+        adopter.feed(animal, animalFood);
+        adopter.playActivities(animal, animalAccessories);
+
 
 
     }

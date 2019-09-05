@@ -7,5 +7,25 @@ public class Adopter extends People {
     String personality;
 
 
+    public void feed(Animal animal, AnimalFood animalFood) {
+
+        System.out.println(name + " give some " + animalFood.name + " to " + animal.name);
+
+        int hungry = --animal.levelOfHunger;
+
+        System.out.println(" The feeling of hunger after feeding " + animal.name + " fell to " + hungry + " % ");
+
+    }
+
+    public void playActivities (Animal animal, AnimalAccessories animalAccessories) {
+        System.out.println(name + " play " + animal.recreationActivity + " with " + animal.name + " using a " + animalAccessories.name );
+
+        int happines = ++ animal.levelOfSpirit;
+
+        System.out.println(animal.name+"'s" + " mood after playing " + animal.recreationActivity + " with " + name + " increased to " + happines + " % ");
+
+    }
+
+
 
 }
