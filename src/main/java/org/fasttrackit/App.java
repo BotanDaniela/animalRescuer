@@ -55,6 +55,8 @@ public class App {
         birds.name = "parrot";
         birds.race = "cockatoo";
 
+        System.out.println("Numele pasarii este " + birds.name + " si face parte din rasa " + birds.race);
+
         Cats cats = new Cats("Lisa ", "feral ");
         cats.name = "Lisa";
         cats.race = "feral";
