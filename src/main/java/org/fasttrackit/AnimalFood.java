@@ -14,13 +14,7 @@ public class AnimalFood {
         this.name = name;
     }
 
-    public static class MyClass {
-        public static void main(String[] args) {
-            LocalDate myObj = LocalDate.now();
-            System.out.println(myObj);
 
-        }
-    }
 }
 
 
