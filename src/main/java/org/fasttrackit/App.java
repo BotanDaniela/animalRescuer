@@ -10,7 +10,6 @@ public class App {
         Animal animal = new Animal("Lesy");
         animal.levelOfHealth = 7;
         animal.age = 2;
-        animal.name = "Lesy";
         animal.color = "brown";
         animal.favoriteFood = "meat";
         animal.height = "medium";
@@ -28,11 +27,9 @@ public class App {
         adopter.personality = "angry";
 
         AnimalAccessories animalAccessories = new AnimalAccessories("ball");
-        animalAccessories.name = "ball";
         animalAccessories.price = 50;
 
         AnimalFood animalFood = new AnimalFood(" Pedigree ");
-        animalFood.name = "Pedigree";
         animalFood.price = 20;
         animalFood.amount = 5;
         animalFood.availabilityInStock = true;
@@ -41,32 +38,22 @@ public class App {
         System.out.println(animalFood.expirationData);
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("Football ");
-        recreationalActivity.name = "Football";
         recreationalActivity.place = "park";
         recreationalActivity.time = 1;
 
         Veterinarian veterinarian = new Veterinarian(3);
         veterinarian.name = "Popescu Andrei";
         veterinarian.specialization = "Vet";
-        veterinarian.experience = 3;
 
         Birds birds = new Birds("parrot", "cockatoo");
-        birds.name = "parrot";
-        birds.race = "cockatoo";
 
         System.out.println("Numele pasarii este " + birds.name + " si face parte din rasa " + birds.race);
 
         Cats cats = new Cats("Lisa ", "feral ");
-        cats.name = "Lisa";
-        cats.race = "feral";
 
         Dog dog = new Dog(" Darck", " beagle");
-        dog.name = "Darck";
-        dog.race = "beagle";
 
         Fishes fishes = new Fishes(" carp", " mirror carp");
-        fishes.species = "carp";
-        fishes.name = "mirror carp";
 
         People people = new People();
         people.gender = "male";
