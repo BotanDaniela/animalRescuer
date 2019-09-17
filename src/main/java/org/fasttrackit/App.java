@@ -8,46 +8,46 @@ public class App {
     public static void main(String[] args) {
 
         Animal animal = new Animal("Lesy");
-        animal.levelOfHealth = 7;
-        animal.age = 2;
-        animal.color = "brown";
-        animal.favoriteFood = "meat";
-        animal.height = "medium";
-        animal.levelOfHunger = 8;
-        animal.levelOfSpirit = 6;
-        animal.recreationActivity = "football";
-        animal.weight = 10.5;
+        animal.setLevelOfHealth(7);
+        animal.setAge(2);
+        animal.setColor("brown");
+        animal.setFavoriteFood("meat");
+        animal.setHeight("medium");
+        animal.setLevelOfHunger(8);
+        animal.setLevelOfSpirit(6);
+        animal.setRecreationActivity("football");
+        animal.setWeight(10.5);
 
         Adopter adopter = new Adopter();
-        adopter.name = "Elena";
-        adopter.moneyAvailable = 350.7;
-        adopter.age = 27;
-        adopter.gender = "female";
-        adopter.home = "house";
-        adopter.personality = "angry";
+        adopter.setName("Elena");
+        adopter.setMoneyAvailable(350.7);
+        adopter.setAge(27);
+        adopter.setGender("female");
+        adopter.setHome("house");
+        adopter.setPersonality("angry");
 
         AnimalAccessories animalAccessories = new AnimalAccessories("ball");
-        animalAccessories.price = 50;
+        animalAccessories.setPrice(50);
 
         AnimalFood animalFood = new AnimalFood(" Pedigree ");
-        animalFood.price = 20;
-        animalFood.amount = 5;
-        animalFood.availabilityInStock = true;
-        animalFood.expirationData = LocalDate.of(2019, 10, 15);
+        animalFood.setPrice(20);
+        animalFood.setAmount(5);
+        animalFood.setAvailabilityInStock(true);
+        animalFood.setExpirationData(LocalDate.of(2019,10,15));
 
-        System.out.println(animalFood.expirationData);
+        System.out.println(animalFood.getExpirationData());
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("Football ");
-        recreationalActivity.place = "park";
-        recreationalActivity.time = 1;
+        recreationalActivity.setPlace("park");
+        recreationalActivity.setTime(1);
 
         Veterinarian veterinarian = new Veterinarian(3);
-        veterinarian.name = "Popescu Andrei";
-        veterinarian.specialization = "Vet";
+        veterinarian.setName("Popescu Andrei");
+        veterinarian.setSpecialization("Vet");
 
         Birds birds = new Birds("parrot", "cockatoo");
 
-        System.out.println("Numele pasarii este " + birds.name + " si face parte din rasa " + birds.race);
+        System.out.println("Numele pasarii este " + birds.getName() + " si face parte din rasa " + birds.getRace());
 
         Cats cats = new Cats("Lisa ", "feral ");
 
@@ -56,9 +56,9 @@ public class App {
         Fishes fishes = new Fishes(" carp", " mirror carp");
 
         People people = new People();
-        people.gender = "male";
-        people.age = 26;
-        people.name = "Mircea";
+        people.setGender("male");
+        people.setAge(26);
+        people.setName("Mircea");
 
         adopter.feed(animal, animalFood);
         adopter.playActivities(animal, animalAccessories);
