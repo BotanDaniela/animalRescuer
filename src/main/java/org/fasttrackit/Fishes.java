@@ -8,6 +8,13 @@ public class Fishes extends Animal {
         this.species = species;
     }
 
+    @Override
+    public void Mood() {
+        super.Mood();
+
+        System.out.println(" Pestele " + getName() + " din rasa " + getSpecies() + " inoata ");
+    }
+
     public String getSpecies() {
         return species;
     }

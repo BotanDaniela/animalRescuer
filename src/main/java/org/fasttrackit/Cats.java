@@ -8,6 +8,13 @@ public class Cats extends Animal {
         this.race = race;
     }
 
+    @Override
+    public void Mood() {
+        super.Mood();
+        System.out.println(" Pisica " + getName() + "din rasa " + getRace()  + " toarce ");
+        return;
+    }
+
     public String getRace() {
         return race;
     }

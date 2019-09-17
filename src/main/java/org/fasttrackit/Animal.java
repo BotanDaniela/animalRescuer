@@ -16,6 +16,10 @@ public class Animal {
         this.name = name;
     }
 
+    public void Mood(){
+        System.out.println(" Animalul este fericit ");
+    }
+
     public String getName() {
         return name;
     }
@@ -95,6 +99,23 @@ public class Animal {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", levelOfHealth=" + levelOfHealth +
+                ", levelOfHunger=" + levelOfHunger +
+                ", levelOfSpirit=" + levelOfSpirit +
+                ", favoriteFood='" + favoriteFood + '\'' +
+                ", recreationActivity='" + recreationActivity + '\'' +
+                ", color='" + color + '\'' +
+                ", height='" + height + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
+
 
 
 }

@@ -17,6 +17,7 @@ public class App {
         animal.setLevelOfSpirit(6);
         animal.setRecreationActivity("football");
         animal.setWeight(10.5);
+        animal.Mood();
 
         Adopter adopter = new Adopter();
         adopter.setName("Elena");
@@ -46,14 +47,18 @@ public class App {
         veterinarian.setSpecialization("Vet");
 
         Birds birds = new Birds("parrot", "cockatoo");
+        birds.Mood();
 
         System.out.println("Numele pasarii este " + birds.getName() + " si face parte din rasa " + birds.getRace());
 
         Cats cats = new Cats("Lisa ", "feral ");
+        cats.Mood();
 
         Dog dog = new Dog(" Darck", " beagle");
+        dog.Mood();
 
         Fishes fishes = new Fishes(" carp", " mirror carp");
+        fishes.Mood();
 
         People people = new People();
         people.setGender("male");
@@ -62,6 +67,12 @@ public class App {
 
         adopter.feed(animal, animalFood);
         adopter.playActivities(animal, animalAccessories);
+
+        System.out.println(animal.toString());
+
+
+
+
 
 
 

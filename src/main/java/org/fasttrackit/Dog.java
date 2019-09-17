@@ -8,6 +8,12 @@ public class Dog extends Animal {
         this.race = race;
     }
 
+    @Override
+    public void Mood() {
+        super.Mood();
+        System.out.println(" Cainele " + getName() + " din rasa " + getRace() + " da din coada ");
+    }
+
     public String getRace() {
         return race;
     }
