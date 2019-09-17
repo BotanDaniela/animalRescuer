@@ -4,8 +4,8 @@ public class Animal {
     private String name;
     private int age;
     private int levelOfHealth;
-    public int levelOfHunger;
-    public int levelOfSpirit;
+    private int levelOfHunger;
+    private int levelOfSpirit;
     private String favoriteFood;
     private String recreationActivity;
     private String color;
