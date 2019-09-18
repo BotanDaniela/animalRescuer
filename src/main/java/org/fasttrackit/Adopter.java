@@ -44,7 +44,9 @@ public class Adopter extends People {
             System.out.println(" Noul nivel al starii de spirit este: " + happines + " la % ");
 
         } else {
-            System.out.println("Nu e preferat");
+            animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
+            int happines = animal.getLevelOfSpirit();
+            System.out.println("Nu e preferat deci nivelul de spirit este: " + happines);
         }
         System.out.println(getName() + " play " + animal.getRecreationActivity() + " with " + animal.getName());
         // animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
