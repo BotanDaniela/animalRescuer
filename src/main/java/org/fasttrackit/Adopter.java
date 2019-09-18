@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import javax.swing.*;
+
 public class Adopter extends People {
     private double moneyAvailable;
     private String home;
@@ -8,6 +10,13 @@ public class Adopter extends People {
 
     public void feed(Animal animal, AnimalFood animalFood) {
         System.out.println(" Nivelul de foame a animalului este : " + animal.getLevelOfHunger() + " la % ");
+
+        if(animal.getFavoriteFood()==animalFood.getName()){
+            animal.setLevelOfSpirit(animal.getLevelOfSpirit()+1);
+            int happines = animal.getLevelOfSpirit();
+
+            System.out.println(" Noul nivel al starii de spirit este: " + happines);
+        }
 
         System.out.println(getName() + " give some " + animalFood.getName() + " to " + animal.getName());
         animal.setLevelOfHunger(animal.getLevelOfHunger()-1);

@@ -6,7 +6,6 @@ public class Birds extends Animal {
 
     @Override
     public void Mood() {
-        super.Mood();
         System.out.println(" Pasarea " + getName() + " din rasa " + getRace() + " ciripeste ");
         return;
     }

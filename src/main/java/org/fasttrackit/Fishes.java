@@ -10,8 +10,6 @@ public class Fishes extends Animal {
 
     @Override
     public void Mood() {
-        super.Mood();
-
         System.out.println(" Pestele " + getName() + " din rasa " + getSpecies() + " inoata ");
     }
 

@@ -10,7 +10,6 @@ public class Cats extends Animal {
 
     @Override
     public void Mood() {
-        super.Mood();
         System.out.println(" Pisica " + getName() + "din rasa " + getRace()  + " toarce ");
         return;
     }

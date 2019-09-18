@@ -53,6 +53,7 @@ public class AnimalFood {
     public void setAvailabilityInStock(boolean availabilityInStock) {
         this.availabilityInStock = availabilityInStock;
     }
+
 }
 
 

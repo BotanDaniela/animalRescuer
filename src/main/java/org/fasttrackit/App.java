@@ -17,6 +17,7 @@ public class App {
         animal.setLevelOfSpirit(6);
         animal.setRecreationActivity("football");
         animal.setWeight(10.5);
+        animal.setFavoriteFood("pedigree");
         animal.Mood();
 
         Adopter adopter = new Adopter();

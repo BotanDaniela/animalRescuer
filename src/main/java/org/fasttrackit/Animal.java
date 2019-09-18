@@ -11,13 +11,14 @@ public class Animal {
     private String color;
     private String height;
     private double weight;
+    private String favoriteActivity;
 
     public Animal(String name) {
         this.name = name;
     }
 
     public void Mood(){
-        System.out.println(" Animalul este fericit ");
+        System.out.println( getName() + " este fericit ");
     }
 
     public String getName() {
@@ -98,6 +99,14 @@ public class Animal {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public String getFavoriteActivity() {
+        return favoriteActivity;
+    }
+
+    public void setFavoriteActivity(String favoriteActivity) {
+        this.favoriteActivity = favoriteActivity;
     }
 
     @Override
