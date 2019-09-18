@@ -8,34 +8,38 @@ public class Adopter extends People {
     // aici ma refer la ce tip de personalitate are : coleric, linistit, etc si in functie de asta sa stim cu ce tip de animal s-ar intelege
     private String personality;
 
-    public void feed(Animal animal, AnimalFood animalFood) {
-        System.out.println(" Nivelul de foame a animalului este : " + animal.getLevelOfHunger() + " la % ");
+    public void feed (Animal animal, AnimalFood animalFood) {
 
-        if(animal.getFavoriteFood()==animalFood.getName()){
-            animal.setLevelOfSpirit(animal.getLevelOfSpirit()+1);
+        if (animal.getFavoriteFood().equals(animalFood.getName())) {
+            animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
             int happines = animal.getLevelOfSpirit();
 
             System.out.println(" Noul nivel al starii de spirit este: " + happines);
+
+        } else {
+            System.out.println("Nu e preferat");
         }
 
-        System.out.println(getName() + " give some " + animalFood.getName() + " to " + animal.getName());
-        animal.setLevelOfHunger(animal.getLevelOfHunger()-1);
+        System.out.println(" Nivelul de foame a animalului este : " + animal.getLevelOfHunger() + " la % ");
 
-        int hungry =animal.getLevelOfHunger();
+
+        System.out.println(getName() + " give some " + animalFood.getName() + " to " + animal.getName());
+        animal.setLevelOfHunger(animal.getLevelOfHunger() - 1);
+
+        int hungry = animal.getLevelOfHunger();
 
         System.out.println(" The feeling of hunger after feeding " + animal.getName() + " fell to " + hungry + " % ");
 
-
     }
 
-    public void playActivities (Animal animal, AnimalAccessories animalAccessories) {
+    public void playActivities(Animal animal, AnimalAccessories animalAccessories) {
         System.out.println(" Nivelul de spirit a animalului este : " + animal.getLevelOfSpirit() + " la % ");
         System.out.println(getName() + " play " + animal.getRecreationActivity() + " with " + animal.getName() + " using a " + animalAccessories.getName());
-        animal.setLevelOfSpirit(animal.getLevelOfSpirit()+1);
+        animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
 
         int happines = animal.getLevelOfSpirit();
 
-        System.out.println(animal.getName()+"'s" + " mood after playing " + animal.getRecreationActivity() + " with " + getName() + " increased to " + happines + " % ");
+        System.out.println(animal.getName() + "'s" + " mood after playing " + animal.getRecreationActivity() + " with " + getName() + " increased to " + happines + " % ");
 
     }
 

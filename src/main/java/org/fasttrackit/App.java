@@ -11,13 +11,12 @@ public class App {
         animal.setLevelOfHealth(7);
         animal.setAge(2);
         animal.setColor("brown");
-        animal.setFavoriteFood("meat");
+        animal.setFavoriteFood("pedigree");
         animal.setHeight("medium");
         animal.setLevelOfHunger(8);
         animal.setLevelOfSpirit(6);
         animal.setRecreationActivity("football");
         animal.setWeight(10.5);
-        animal.setFavoriteFood("pedigree");
         animal.Mood();
 
         Adopter adopter = new Adopter();
@@ -31,7 +30,7 @@ public class App {
         AnimalAccessories animalAccessories = new AnimalAccessories("ball");
         animalAccessories.setPrice(50);
 
-        AnimalFood animalFood = new AnimalFood(" Pedigree ");
+        AnimalFood animalFood = new AnimalFood(" pedigree ");
         animalFood.setPrice(20);
         animalFood.setAmount(5);
         animalFood.setAvailabilityInStock(true);
