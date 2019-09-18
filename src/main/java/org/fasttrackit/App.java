@@ -17,6 +17,7 @@ public class App {
         animal.setLevelOfSpirit(6);
         animal.setRecreationActivity("football");
         animal.setWeight(10.5);
+        animal.setFavoriteActivity("football");
         animal.Mood();
 
         Adopter adopter = new Adopter();
@@ -30,7 +31,7 @@ public class App {
         AnimalAccessories animalAccessories = new AnimalAccessories("ball");
         animalAccessories.setPrice(50);
 
-        AnimalFood animalFood = new AnimalFood(" pedigree ");
+        AnimalFood animalFood = new AnimalFood("pedigree");
         animalFood.setPrice(20);
         animalFood.setAmount(5);
         animalFood.setAvailabilityInStock(true);
@@ -38,7 +39,7 @@ public class App {
 
         System.out.println(animalFood.getExpirationData());
 
-        RecreationalActivity recreationalActivity = new RecreationalActivity("Football ");
+        RecreationalActivity recreationalActivity = new RecreationalActivity("football");
         recreationalActivity.setPlace("park");
         recreationalActivity.setTime(1);
 
@@ -66,7 +67,7 @@ public class App {
         people.setName("Mircea");
 
         adopter.feed(animal, animalFood);
-        adopter.playActivities(animal, animalAccessories);
+        adopter.playActivities(animal,recreationalActivity);
 
         System.out.println(animal.toString());
 

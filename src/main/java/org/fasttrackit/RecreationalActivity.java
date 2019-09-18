@@ -9,8 +9,8 @@ public class RecreationalActivity {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
+   public String getName() {
+       return name;
     }
 
     public void setName(String name) {
@@ -31,5 +31,14 @@ public class RecreationalActivity {
 
     public void setPlace(String place) {
         this.place = place;
+    }
+
+    @Override
+    public String toString() {
+        return "RecreationalActivity{" +
+                "name='" + name + '\'' +
+                ", time=" + time +
+                ", place='" + place + '\'' +
+                '}';
     }
 }

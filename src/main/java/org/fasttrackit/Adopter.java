@@ -8,13 +8,13 @@ public class Adopter extends People {
     // aici ma refer la ce tip de personalitate are : coleric, linistit, etc si in functie de asta sa stim cu ce tip de animal s-ar intelege
     private String personality;
 
-    public void feed (Animal animal, AnimalFood animalFood) {
+    public void feed(Animal animal, AnimalFood animalFood) {
 
         if (animal.getFavoriteFood().equals(animalFood.getName())) {
             animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
             int happines = animal.getLevelOfSpirit();
 
-            System.out.println(" Noul nivel al starii de spirit este: " + happines);
+            System.out.println(" Noul nivel al starii de spirit este: " + happines + " la % ");
 
         } else {
             System.out.println("Nu e preferat");
@@ -32,14 +32,26 @@ public class Adopter extends People {
 
     }
 
-    public void playActivities(Animal animal, AnimalAccessories animalAccessories) {
+    public void playActivities(Animal animal, RecreationalActivity recreationalActivity) {
+
         System.out.println(" Nivelul de spirit a animalului este : " + animal.getLevelOfSpirit() + " la % ");
-        System.out.println(getName() + " play " + animal.getRecreationActivity() + " with " + animal.getName() + " using a " + animalAccessories.getName());
-        animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
+        // System.out.println(getName() + " play " + animal.getRecreationActivity() + " with " + animal.getName());
 
-        int happines = animal.getLevelOfSpirit();
+        if (animal.getFavoriteActivity().equals(recreationalActivity.getName())) {
+            animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 2);
+            int happines = animal.getLevelOfSpirit();
 
-        System.out.println(animal.getName() + "'s" + " mood after playing " + animal.getRecreationActivity() + " with " + getName() + " increased to " + happines + " % ");
+            System.out.println(" Noul nivel al starii de spirit este: " + happines + " la % ");
+
+        } else {
+            System.out.println("Nu e preferat");
+        }
+        System.out.println(getName() + " play " + animal.getRecreationActivity() + " with " + animal.getName());
+        // animal.setLevelOfSpirit(animal.getLevelOfSpirit() + 1);
+
+        //int happines = animal.getLevelOfSpirit();
+
+        //System.out.println(animal.getName() + "'s" + " mood after playing " + animal.getRecreationActivity() + " with " + getName() + " increased to " + happines + " % ");
 
     }
 
