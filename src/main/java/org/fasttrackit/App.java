@@ -46,18 +46,18 @@ public class App {
         veterinarian.setName("Popescu Andrei");
         veterinarian.setSpecialization("Vet");
 
-        Birds birds = new Birds("parrot", "cockatoo");
+        Animal birds = new Birds("parrot", "cockatoo");
         birds.Mood();
 
-        System.out.println("Numele pasarii este " + birds.getName() + " si face parte din rasa " + birds.getRace());
+        System.out.println("Numele pasarii este " + birds.getName() + " si face parte din rasa " + birds.getName());
 
-        Cats cats = new Cats("Lisa ", "feral ");
+        Animal cats = new Cats("Lisa ", "feral ");
         cats.Mood();
 
-        Dog dog = new Dog(" Darck", " beagle");
+        Animal dog = new Dog(" Darck", " beagle");
         dog.Mood();
 
-        Fishes fishes = new Fishes(" carp", " mirror carp");
+        Animal fishes = new Fishes(" carp", " mirror carp");
         fishes.Mood();
 
         People people = new People();
