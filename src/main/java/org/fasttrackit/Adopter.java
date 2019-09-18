@@ -7,6 +7,7 @@ public class Adopter extends People {
     private String personality;
 
     public void feed(Animal animal, AnimalFood animalFood) {
+        System.out.println(" Nivelul de foame a animalului este : " + animal.getLevelOfHunger() + " la % ");
 
         System.out.println(getName() + " give some " + animalFood.getName() + " to " + animal.getName());
         animal.setLevelOfHunger(animal.getLevelOfHunger()-1);
@@ -15,9 +16,11 @@ public class Adopter extends People {
 
         System.out.println(" The feeling of hunger after feeding " + animal.getName() + " fell to " + hungry + " % ");
 
+
     }
 
     public void playActivities (Animal animal, AnimalAccessories animalAccessories) {
+        System.out.println(" Nivelul de spirit a animalului este : " + animal.getLevelOfSpirit() + " la % ");
         System.out.println(getName() + " play " + animal.getRecreationActivity() + " with " + animal.getName() + " using a " + animalAccessories.getName());
         animal.setLevelOfSpirit(animal.getLevelOfSpirit()+1);
 
