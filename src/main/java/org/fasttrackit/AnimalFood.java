@@ -14,6 +14,10 @@ public class AnimalFood {
         this.name = name;
     }
 
+    public AnimalFood() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -54,6 +58,12 @@ public class AnimalFood {
         this.availabilityInStock = availabilityInStock;
     }
 
+    @Override
+    public String toString() {
+        return "AnimalFood{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
 
 

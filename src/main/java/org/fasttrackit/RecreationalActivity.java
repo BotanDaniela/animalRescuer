@@ -9,7 +9,11 @@ public class RecreationalActivity {
         this.name = name;
     }
 
-   public String getName() {
+    public RecreationalActivity() {
+
+    }
+
+    public String getName() {
        return name;
     }
 
@@ -37,8 +41,6 @@ public class RecreationalActivity {
     public String toString() {
         return "RecreationalActivity{" +
                 "name='" + name + '\'' +
-                ", time=" + time +
-                ", place='" + place + '\'' +
                 '}';
     }
 }
