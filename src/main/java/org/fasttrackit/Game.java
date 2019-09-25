@@ -1,6 +1,5 @@
 package org.fasttrackit;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +15,8 @@ public class Game {
     public void start() {
         initFood();
         initActivities();
-        displayActivity();
+       displayActivity();
+       displayFood();
 
     }
 
@@ -25,14 +25,17 @@ public class Game {
         food1.setName("Pedigree");
         AnimalFood food2 = new AnimalFood();
         food2.setName(" Chicken");
-        System.out.println(" Felurile disponibile de mancare sunt: ");
         availableAnimalFood.add(food1);
         availableAnimalFood.add(food2);
-        for (AnimalFood animalFood : availableAnimalFood) {
-
-        }
-        System.out.println(food1 + "," + food2);
     }
+
+   private void displayFood(){
+       System.out.println(" Felurile disponibile de mancare sunt: ");
+
+       for(int i = 1; i<availableAnimalFood.size(); i++){
+           System.out.println(availableAnimalFood.toString());
+       }
+   }
 
     private void initActivities() {
         RecreationalActivity firstActivity = new RecreationalActivity();
