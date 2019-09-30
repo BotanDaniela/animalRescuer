@@ -31,10 +31,15 @@ public class Game {
 
    private void displayFood(){
        System.out.println(" Felurile disponibile de mancare sunt: ");
-
-       for(int i = 1; i<availableAnimalFood.size(); i++){
-           System.out.println(availableAnimalFood.toString());
+       for (AnimalFood animalFood : availableAnimalFood){
+           System.out.println(animalFood.getName());
        }
+       System.out.println();
+
+
+       //for(int i = 1; i<availableAnimalFood.size(); i++){
+           //System.out.println(availableAnimalFood.toString());
+      // }
    }
 
     private void initActivities() {
